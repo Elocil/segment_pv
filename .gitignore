@@ -1,0 +1,13 @@
+data/
+venv/
+__pycache__/
+*.pyc
+outputs/
+runs/
+checkpoints/
+*.pt
+*.pth
+.vscode/
+.DS_Store
+Thumbs.db
+.env
