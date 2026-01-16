@@ -7,8 +7,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
-import torch_directml
-
 from dataset import PVSegmentationDataset
 from model import UNet
 
@@ -225,7 +223,8 @@ def main():
     cfg = Config()
     set_seed(cfg.seed)
 
-    device = torch_directml.device()
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("Using device:", device)
 
     results = []
     for lr in cfg.lrs:
