@@ -1,0 +1,16 @@
+﻿
+Name                      Length LastWriteTime       
+----                      ------ -------------       
+unet_best_lr0.0001.pth 124238468 1/16/2026 2:48:23 PM
+unet_best_lr0.0003.pth 124238468 1/16/2026 2:37:22 PM
+unet_best_lr0.001.pth  124238282 1/17/2026 1:07:17 AM
+
+
+
+Algorithm       Hash                                                                   Path                                                                                                 
+---------       ----                                                                   ----                                                                                                 
+SHA256          E8F3DF8E19BE393D67924DCCDA1BE4C818E175DF62B30687330DEA2278016776       C:\Dev\segment_pv\outputs\unet_best_lr0.0001.pth                                                     
+SHA256          FB0A7D31D41DE6386EF53EB872DFD5A7605274A75D042565E2D4C10E402A1008       C:\Dev\segment_pv\outputs\unet_best_lr0.0003.pth                                                     
+SHA256          AF95B602210F19691D8B5D55CEDDE3CE65F2A8A9A5E7B1FEA4120906458F4D99       C:\Dev\segment_pv\outputs\unet_best_lr0.001.pth                                                      
+
+
