@@ -29,3 +29,7 @@ Thumbs.db
 # Archives
 *.zip
 
+
+# Local logs
+results_lr_sweep.txt
+
