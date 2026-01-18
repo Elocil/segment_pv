@@ -10,6 +10,8 @@ from torch.utils.data import DataLoader
 from dataset import PVSegmentationDataset
 from model import UNet
 
+from datetime import datetime
+
 
 @dataclass
 class Config:
@@ -225,6 +227,12 @@ def main():
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device:", device)
+
+    # Create a unique output folder per run to avoid overwriting checkpoints
+    run_name = datetime.now().strftime("run_%Y%m%d_%H%M%S")
+    cfg.out_dir = os.path.join(cfg.out_dir, run_name)
+    os.makedirs(cfg.out_dir, exist_ok=True)
+    print("Run outputs dir:", cfg.out_dir)
 
     results = []
     for lr in cfg.lrs:
