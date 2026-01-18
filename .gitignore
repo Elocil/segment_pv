@@ -25,3 +25,7 @@ __pycache__/
 Thumbs.db
 *.log
 *.tmp
+
+# Archives
+*.zip
+
